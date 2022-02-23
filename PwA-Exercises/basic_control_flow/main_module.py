@@ -3,14 +3,20 @@
 """
 Create a for loop that prints the numbers zero through ten sequentially
 """
-
+for loop in range(0,11)
+print(loop)
 """
 Create a for loop that prints the numbers 20 through 10 sequentially
 """
-
+for loop in range(20,10,-1)
+ print(loop)
 """
 Create a while loop that prints a string of * that grow by one each print until the string printed is 10 * together
 """
+x=1
+while x <= 10:
+  print(X)
+  x += 1
 
 """
 Create a string with the value "world!" in a new module and import it to this one. Once you have done that, print
