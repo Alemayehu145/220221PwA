@@ -29,10 +29,37 @@ CREATE TABLE dogs(
 );
 
 -- 1NF
+Create Table players(
+  player_id serial Primary key,
+  player_first_name varchar(50),
+  player_lasr_name varchar(50),
+  Team_id int,
+  Team_name varchar (20)
+  shots_attempted int,
+  shots_made int,
+  shooting_percentage float
+);
 
 -- 2NF
+Create table players(
+   player_id serial primary key,
+   player_first_name varchar(50),
+   Player_last_name varchar(50),
+   shots_attempted int,
+   shots_made int,
+   shooting_percentage float,
+   Team_id int forign key
+);
 
--- 3NF
+3rd NF
+create table players(
+  player_id serial primary key,
+  player_first_name varchar(50),
+  player_last_name varchar(50),
+  shots_made int,
+  shots_attempted int,
+  Team_id int forign key
+);
 
 -- create two tables in the space below, one called humans and the other called stomachs, that have a 1:1 relationship with each other
 -- (one human can have one stomach)
